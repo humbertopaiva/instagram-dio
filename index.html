@@ -7,7 +7,6 @@
 		<title>Instagram</title>
 	</head>
 	<body>
-		<div class="shapes--overlay"></div>
 		<div class="shapes">
 			<div class="ring ring-left">
 				<div class="center"></div>
@@ -16,10 +15,8 @@
 				<div class="center"></div>
 			</div>
 		</div>
+
 		<div class="instagram-wrapper">
-			<div class="instagram-phone">
-				<img src="./img/instagram-celular.png" alt="celular" />
-			</div>
 			<div class="instagram-continue">
 				<div class="group">
 					<img
@@ -27,24 +24,23 @@
 						class="instagram-logo"
 						alt="instagram logo"
 					/>
-					<div class="profile-photo">
-						<img
-							src="./img/perfil-instagram.jpg"
-							alt="foto de perfil"
+					<form class="form">
+						<input
+							type="text"
+							placeholder="Telefone, nome de usuário ou email"
 						/>
-					</div>
-					<a href="#" class="instagram-login"
-						>Continue como sprucegabriela</a
-					>
-					<a href="#" class="instagram-logout">Remover conta</a>
+						<input type="password" placeholder="Senha" />
+
+						<button type="submit" href="#" class="instagram-login">
+							Entrar
+						</button>
+					</form>
 				</div>
 				<div class="group">
-					<p class="not-account">Não é sprucegabriela?</p>
-					<p class="not-account">
-						<span class="link-blue">Alternar contas</span>
-						ou
-						<span class="link-blue">Inscreva-se</span>
-					</p>
+					<div class="not-account">
+						<p class="not-account">Não tem uma conta?</p>
+						<a class="link-blue">Cadastre-se</a>
+					</div>
 				</div>
 				<div class="get-the-app">
 					<p class="get-app">Baixe o aplicativo</p>

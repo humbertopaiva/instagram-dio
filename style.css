@@ -16,6 +16,32 @@ body {
 	display: flex;
 	justify-content: center;
 }
+a {
+	cursor: pointer;
+}
+
+input {
+	width: 100%;
+	background-color: #eeeeee;
+	border: none;
+	padding: 0.65rem 1rem;
+	margin-bottom: 0.5rem;
+	border: 2px solid #dfdfdf;
+	border-radius: 2px;
+}
+
+input:focus {
+	outline: 1px solid #1da2fb;
+}
+
+input::placeholder {
+	font-size: 13px;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
 
 .shapes {
 	width: 100vw;
@@ -53,8 +79,8 @@ body {
 
 .ring::after {
 	content: "";
-	width: 60%;
-	height: 60%;
+	width: 80%;
+	height: 80%;
 	background-color: #ffffff;
 	border-radius: 50%;
 }
@@ -63,30 +89,28 @@ body {
 	width: 800px;
 	height: 800px;
 	top: 100px;
-	filter: blur(8px);
-	opacity: 0.7;
 }
 
 .ring-left {
 	width: 700px;
 	height: 700px;
-	top: -200px;
-	left: -60px;
-	filter: blur(16px);
+	top: -400px;
+	left: -150px;
+	filter: blur(10px);
 	opacity: 0.5;
 }
 
 .ring-right {
 	position: absolute;
-	right: 0;
+	right: -200px;
+	top: 400px;
 }
 
 .instagram-wrapper {
 	display: flex;
 	align-items: center;
-	justify-content: start;
-	width: 60%;
-	height: 100vh;
+	justify-content: center;
+	width: 45%;
 }
 
 .instagram-phone {
@@ -114,23 +138,21 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
+	max-width: 335px;
 	width: 100%;
-	padding: 1.3rem 0;
-
+	padding: 2rem;
 	background: rgba(255, 255, 255, 0.7);
-	border-radius: 16px;
+	border-radius: 4px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	border: 2px solid rgba(255, 255, 255, 0.4);
-}
-
-.group:nth-child(1) {
-	min-height: 19rem;
+	margin-top: 1rem;
 }
 
 .instagram-logo {
 	height: 3rem;
+	margin-bottom: 2rem;
 }
 
 .profile-photo {
@@ -150,6 +172,14 @@ body {
 	color: #ffffff;
 	padding: 8px;
 	border-radius: 4px;
+	width: 100%;
+	text-align: center;
+	padding: 0.75rem;
+	margin-top: 0.75rem;
+}
+
+.instagram-login:hover {
+	filter: brightness(1.1);
 }
 
 .instagram-logout {
@@ -159,10 +189,23 @@ body {
 
 .not-account {
 	color: rgb(160, 160, 160);
+	display: flex;
+}
+
+.not-account p {
+	margin-right: 0.5rem;
+}
+
+.not-account a {
+	font-weight: bold;
 }
 
 .link-blue {
 	color: #0095f6;
+}
+
+.link-blue:hover {
+	filter: brightness(1.1);
 }
 
 .get-the-app {
